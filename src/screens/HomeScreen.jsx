@@ -133,7 +133,7 @@ const HomeScreen = () => {
       {view === 1 && (
         <AllItems data={dummyData.filter(AllItems => AllItems.stock < 10)} />
       )}
-      {view === 2 && <Manage />}
+      {view === 2 && <Manage data={dummyData} />}
     </View>
   );
 };
